@@ -1,0 +1,108 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base
+  title="The Lineage"
+  description="Nahua Kukui is a lineage — a chain of teachers, hands, and traditions carried forward through therapeutic and sacred bodywork."
+  canonicalPath="/about"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nahua Kukui Practitioner",
+      "url": "https://nahuakukui.com/about",
+      "description": "Practitioner of therapeutic and sacred bodywork in the Hawaiian kukui lineage."
+    })} />
+  </Fragment>
+
+  {/* Page Hero */}
+  <section class="bg-bg-dark pt-32 pb-20 md:pt-40 md:pb-24">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h1 class="font-serif text-4xl md:text-5xl font-semibold text-gold mb-6">The Lineage</h1>
+      <p class="text-text-inverse/70 text-lg leading-relaxed">
+        Nahua Kukui is not one person. It is a lineage &mdash; a chain of teachers, hands, and traditions carried forward through the work offered here.
+      </p>
+    </div>
+  </section>
+
+  {/* Bio Section A: Jody's Teacher */}
+  <section class="bg-bg-light py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div class="aspect-square bg-accent/10 rounded-sm flex items-center justify-center">
+          <p class="text-muted text-sm italic text-center px-6">
+            Portrait: Jody's teacher
+          </p>
+        </div>
+        <div>
+          <h2 class="font-serif text-2xl md:text-3xl font-semibold text-accent mb-4">
+            [Teacher's Name]
+          </h2>
+          <p class="text-sm text-muted uppercase tracking-wide mb-6">The Source</p>
+          <p class="text-text/80 leading-relaxed">
+            [Bio of Jody's teacher — 100&ndash;150 words. This section tells the story of where the lineage begins, the traditions carried forward, and the knowledge passed down through hands and practice. Provided by client.]
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Bio Section B: Jody */}
+  <section class="bg-bg-light py-24 md:py-32 border-t border-accent/10">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div class="order-2 md:order-1">
+          <h2 class="font-serif text-2xl md:text-3xl font-semibold text-accent mb-4">
+            Jody
+          </h2>
+          <p class="text-sm text-muted uppercase tracking-wide mb-6">The Teacher</p>
+          <p class="text-text/80 leading-relaxed mb-6">
+            [Bio of Jody — 100&ndash;150 words. Jody is the carrier of this lineage and leads deeper immersions and retreats. Her work bridges the sacred and the structural, held in places of stillness. Provided by client.]
+          </p>
+          <a href="#" target="_blank" rel="noopener" class="text-gold text-sm font-medium hover:underline">
+            Learn about Jody's retreats &rarr;
+          </a>
+        </div>
+        <div class="order-1 md:order-2 aspect-square bg-accent/10 rounded-sm flex items-center justify-center">
+          <p class="text-muted text-sm italic text-center px-6">
+            Portrait: Jody
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Bio Section C: The Practitioner */}
+  <section class="bg-bg-light py-24 md:py-32 border-t border-accent/10">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div class="aspect-square bg-accent/10 rounded-sm flex items-center justify-center">
+          <p class="text-muted text-sm italic text-center px-6">
+            Portrait: Practitioner
+          </p>
+        </div>
+        <div>
+          <h2 class="font-serif text-2xl md:text-3xl font-semibold text-accent mb-4">
+            [Practitioner's Name]
+          </h2>
+          <p class="text-sm text-muted uppercase tracking-wide mb-6">The Practitioner</p>
+          <p class="text-text/80 leading-relaxed mb-8">
+            [Bio of the practitioner — 100&ndash;150 words. This is the person offering sessions through Nahua Kukui, trained in this lineage and carrying the work forward. Provided by client.]
+          </p>
+          <a href="/contact" class="btn-primary">Book a session</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Closing */}
+  <section class="bg-bg-dark py-20">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <p class="font-serif text-lg md:text-xl text-text-inverse/70 italic leading-relaxed">
+        The kukui oil burned in the hands of those who came before. What passes through these sessions is the same light, carried forward.
+      </p>
+    </div>
+  </section>
+</Base>

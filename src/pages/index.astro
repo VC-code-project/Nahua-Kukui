@@ -1,0 +1,109 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base
+  title="Nahua Kukui"
+  description="Therapeutic and sacred bodywork for those standing at the edge of transformation. Rooted in Hawaiian lineage, offered one-on-one."
+  canonicalPath="/"
+>
+  {/* ── Section 1: Hero ── */}
+  <section class="relative min-h-[90vh] md:min-h-screen flex items-center justify-center bg-bg-dark overflow-hidden">
+    {/* Subtle background motif */}
+    <div class="absolute inset-0 opacity-20" aria-hidden="true">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-gradient-radial from-gold/30 to-transparent blur-3xl"></div>
+    </div>
+
+    <div class="relative z-10 text-center px-6 max-w-3xl mx-auto">
+      <h1 class="font-serif text-5xl md:text-7xl font-semibold text-gold tracking-wide mb-6">
+        Nahua Kukui
+      </h1>
+      <p class="text-text-inverse/80 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+        Therapeutic and sacred bodywork for those standing at the edge of transformation. Rooted in Hawaiian lineage, offered one-on-one.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/contact" class="btn-primary">Book a session</a>
+        <a href="#kukui" class="btn-secondary">Learn more</a>
+      </div>
+    </div>
+
+    {/* Scroll indicator */}
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce" aria-hidden="true">
+      <svg class="w-5 h-5 text-gold/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </div>
+  </section>
+
+  {/* ── Section 2: The Kukui ── */}
+  <section id="kukui" class="bg-bg-light py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div>
+          <h2 class="font-serif text-3xl md:text-4xl font-semibold text-accent mb-6">The Kukui</h2>
+          <p class="text-text/80 leading-relaxed mb-4">
+            The kukui tree has been a source of light in Hawaiian life for generations. Its seeds were pressed for oil, burned to illuminate the night, and passed hand to hand as a symbol of guidance, lineage, and knowledge.
+          </p>
+          <p class="text-text/80 leading-relaxed">
+            Nahua Kukui &mdash; the seeds of light &mdash; carries this forward. The work offered here is a continuation of that lineage: bodywork as illumination, touch as transmission, each session a small kernel of something older than any one of us.
+          </p>
+        </div>
+        <div class="aspect-square bg-accent/10 rounded-sm flex items-center justify-center">
+          <p class="text-muted text-sm italic text-center px-6">
+            Image: kukui tree, seeds, or hands-and-oil close-up
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ── Section 3: What's Offered ── */}
+  <section class="bg-bg-light py-24 md:py-32 border-t border-accent/10">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="font-serif text-3xl md:text-4xl font-semibold text-accent text-center mb-16">
+        What's Offered
+      </h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        {/* Card 1: Private Sessions */}
+        <a href="/offerings" class="group block bg-white/60 border border-accent/10 rounded-sm p-8 transition-all hover:-translate-y-1 hover:shadow-lg">
+          <div class="w-10 h-[2px] bg-gold mb-6"></div>
+          <h3 class="font-serif text-xl font-semibold text-text mb-3">Private Sessions</h3>
+          <p class="text-text/70 text-sm leading-relaxed">
+            Therapeutic and sacred bodywork, offered in person. Each session is shaped around what the body and the moment are asking for.
+          </p>
+        </a>
+
+        {/* Card 2: Retreats with Jody */}
+        <a href="#" target="_blank" rel="noopener" class="group block bg-white/60 border border-accent/10 rounded-sm p-8 transition-all hover:-translate-y-1 hover:shadow-lg">
+          <div class="w-10 h-[2px] bg-gold mb-6"></div>
+          <h3 class="font-serif text-xl font-semibold text-text mb-3">Retreats with Jody</h3>
+          <p class="text-text/70 text-sm leading-relaxed">
+            Deeper immersions led by Jody, teacher and carrier of this lineage. Held in places of stillness, opening space for longer transformation.
+          </p>
+          <span class="inline-block mt-4 text-xs text-gold font-medium uppercase tracking-wide">
+            Visit Jody's site &rarr;
+          </span>
+        </a>
+
+        {/* Card 3: The Lineage */}
+        <a href="/about" class="group block bg-white/60 border border-accent/10 rounded-sm p-8 transition-all hover:-translate-y-1 hover:shadow-lg">
+          <div class="w-10 h-[2px] bg-gold mb-6"></div>
+          <h3 class="font-serif text-xl font-semibold text-text mb-3">The Lineage</h3>
+          <p class="text-text/70 text-sm leading-relaxed">
+            Every hand is trained by another. Learn about the teachers and tradition behind this work.
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* ── Section 4: Who This Is For ── */}
+  <section class="bg-bg-dark py-24 md:py-32">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <p class="font-serif text-xl md:text-2xl text-text-inverse/90 leading-relaxed italic mb-10">
+        These sessions are for people in good physical health who find themselves in transition &mdash; between chapters, careers, relationships, identities &mdash; and who want a holistic, embodied way through it. Not a fix. A forward movement.
+      </p>
+      <a href="/contact" class="btn-primary">Book a session</a>
+    </div>
+  </section>
+</Base>

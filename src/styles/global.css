@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+/* ── Design Tokens ── */
+@theme {
+  --color-bg-dark: #111111;
+  --color-bg-light: #F6F1E7;
+  --color-accent: #2E5E3A;
+  --color-gold: #C9A24C;
+  --color-text: #111111;
+  --color-text-inverse: #F6F1E7;
+  --color-muted: #6B6B6B;
+
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+/* ── Base Styles ── */
+html {
+  font-size: 17px;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background-color: var(--color-bg-light);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── Skip to Content ── */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 100;
+  padding: 8px 16px;
+  background: var(--color-gold);
+  color: var(--color-bg-dark);
+  font-weight: 600;
+  border-radius: 2px;
+  text-decoration: none;
+}
+.skip-to-content:focus {
+  top: 16px;
+}
+
+/* ── Button Styles ── */
+.btn-primary {
+  display: inline-block;
+  padding: 16px 28px;
+  background-color: var(--color-gold);
+  color: var(--color-bg-dark);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.btn-primary:hover {
+  filter: brightness(0.9);
+  transform: translateY(-2px);
+}
+.btn-primary:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 16px 28px;
+  background-color: transparent;
+  color: var(--color-gold);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  border: 1px solid var(--color-gold);
+  border-radius: 2px;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.btn-secondary:hover {
+  background-color: rgba(201, 162, 76, 0.1);
+  transform: translateY(-2px);
+}
+.btn-secondary:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
