@@ -12,7 +12,7 @@ interface Props {
 const { title, description, canonicalPath } = Astro.props;
 const siteUrl = "https://nahuakukui.com";
 const canonical = canonicalPath ? `${siteUrl}${canonicalPath}` : siteUrl;
-const fullTitle = title === "Nahua Kukui" ? title : `${title} — Nahua Kukui`;
+const fullTitle = title === "Na Hua Kukui" ? title : `${title} — Na Hua Kukui`;
 ---
 
 <!doctype html>
@@ -33,7 +33,7 @@ const fullTitle = title === "Nahua Kukui" ? title : `${title} — Nahua Kukui`;
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={`${siteUrl}/og-image.jpg`} />
-    <meta property="og:site_name" content="Nahua Kukui" />
+    <meta property="og:site_name" content="Na Hua Kukui" />
 
     {/* Twitter */}
     <meta name="twitter:card" content="summary_large_image" />
