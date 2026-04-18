@@ -4,7 +4,7 @@ import Base from "../layouts/Base.astro";
 
 <Base
   title="Contact"
-  description="Reach out for session inquiries, bookings, or questions about therapeutic and sacred bodywork with Na Hua Kukui."
+  description="Get in touch with Na Hua Kukui for sessions, trainings, or questions about Lomi Lomi bodywork."
   canonicalPath="/contact"
 >
   <Fragment slot="head">
@@ -12,107 +12,102 @@ import Base from "../layouts/Base.astro";
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Na Hua Kukui",
-      "description": "Therapeutic and sacred bodywork rooted in Hawaiian lineage.",
+      "description": "Lomi Lomi bodywork and training in the lineage of Kahu Abraham Kawaii.",
       "url": "https://nahuakukui.com",
-      "email": "hello@nahuakukui.com"
+      "email": "contact@nahuakukui.com",
+      "telephone": "+1-808-283-3797"
     })} />
   </Fragment>
 
   {/* Page Hero */}
   <section class="bg-bg-dark pt-32 pb-20 md:pt-40 md:pb-24">
     <div class="max-w-3xl mx-auto px-6 text-center">
-      <h1 class="font-serif text-4xl md:text-5xl font-semibold text-gold mb-6">Reach Out</h1>
+      <h1 class="font-serif text-4xl md:text-5xl font-semibold text-gold mb-6">Contact</h1>
       <p class="text-text-inverse/70 text-lg leading-relaxed">
-        For session inquiries, bookings, or questions about the work, send a message. Responses within a few days.
+        For session inquiries, training information, or questions about the work, reach out below.
       </p>
     </div>
   </section>
 
   {/* Contact Options */}
   <section class="bg-bg-light py-24 md:py-32">
-    <div class="max-w-4xl mx-auto px-6">
+    <div class="max-w-3xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-12 md:gap-16">
 
-        {/* Left: Email + Form */}
+        {/* Email */}
         <div>
-          <h2 class="font-serif text-2xl font-semibold text-accent mb-6">Send a Message</h2>
-
-          {/* Direct email option */}
-          <div class="mb-10">
-            <p class="text-text/80 mb-3">Prefer email? Write directly:</p>
+          <h2 class="font-serif text-2xl font-semibold text-accent mb-6">Email</h2>
+          <div class="flex flex-col gap-4">
             <a
-              href="mailto:hello@nahuakukui.com"
+              href="mailto:nahuakukui@protonmail.com"
               class="text-gold font-medium hover:underline text-lg"
             >
-              hello@nahuakukui.com
+              nahuakukui@protonmail.com
+            </a>
+            <a
+              href="mailto:contact@nahuakukui.com"
+              class="text-gold font-medium hover:underline text-lg"
+            >
+              contact@nahuakukui.com
             </a>
           </div>
+        </div>
 
-          {/* Simple contact form */}
-          <form
-            action="https://formspree.io/f/YOUR_FORM_ID"
-            method="POST"
-            class="flex flex-col gap-5"
+        {/* Phone */}
+        <div>
+          <h2 class="font-serif text-2xl font-semibold text-accent mb-6">Phone</h2>
+          <a
+            href="tel:+18082833797"
+            class="text-gold font-medium hover:underline text-lg"
           >
-            <div>
-              <label for="name" class="block text-sm font-medium text-text mb-1">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                class="w-full px-4 py-3 border border-accent/20 rounded-sm bg-white text-text focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"
-              />
-            </div>
-            <div>
-              <label for="email" class="block text-sm font-medium text-text mb-1">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                class="w-full px-4 py-3 border border-accent/20 rounded-sm bg-white text-text focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"
-              />
-            </div>
-            <div>
-              <label for="message" class="block text-sm font-medium text-text mb-1">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-                class="w-full px-4 py-3 border border-accent/20 rounded-sm bg-white text-text focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors resize-y"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn-primary text-center cursor-pointer self-start">
-              Send message
-            </button>
-          </form>
+            (808) 283-3797
+          </a>
         </div>
 
-        {/* Right: Calendly */}
-        <div id="booking">
-          <h2 class="font-serif text-2xl font-semibold text-accent mb-6">Book a Discovery Call</h2>
-          <p class="text-text/80 mb-6">
-            Not sure where to start? Schedule a free 15-minute call to talk through what you're looking for.
-          </p>
+      </div>
 
-          {/* Calendly placeholder — replace YOUR_CALENDLY_URL */}
-          <div class="bg-white border border-accent/10 rounded-sm p-8 min-h-[400px] flex items-center justify-center">
-            <div class="text-center text-muted">
-              <p class="text-sm italic mb-4">Calendly booking widget will appear here</p>
-              <p class="text-xs">
-                Replace <code class="bg-accent/10 px-1 py-0.5 rounded text-accent">YOUR_CALENDLY_URL</code> in the code with the Calendly link
-              </p>
-            </div>
+      {/* Contact Form */}
+      <div class="mt-16 pt-16 border-t border-accent/10">
+        <h2 class="font-serif text-2xl font-semibold text-accent mb-6">Send a Message</h2>
+        <form
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+          class="flex flex-col gap-5 max-w-xl"
+        >
+          <div>
+            <label for="name" class="block text-sm font-medium text-text mb-1">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full px-4 py-3 border border-accent/20 rounded-sm bg-white text-text focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"
+            />
           </div>
-          <!--
-            To enable Calendly, uncomment and replace YOUR_CALENDLY_URL:
-            <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR_CALENDLY_URL" style="min-width:320px;height:630px;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-          -->
-        </div>
-
+          <div>
+            <label for="email" class="block text-sm font-medium text-text mb-1">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full px-4 py-3 border border-accent/20 rounded-sm bg-white text-text focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"
+            />
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-text mb-1">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              class="w-full px-4 py-3 border border-accent/20 rounded-sm bg-white text-text focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors resize-y"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-primary text-center cursor-pointer self-start">
+            Send message
+          </button>
+        </form>
       </div>
     </div>
   </section>

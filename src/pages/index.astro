@@ -4,7 +4,7 @@ import Base from "../layouts/Base.astro";
 
 <Base
   title="Na Hua Kukui"
-  description="Therapeutic and sacred bodywork for those standing at the edge of transformation. Rooted in Hawaiian lineage, offered one-on-one."
+  description="Cultivating seeds of knowledge for wholistic wellbeing. Fostering communal health and resilience through self awareness, movement and bodywork."
   canonicalPath="/"
 >
   {/* ── Section 1: Hero ── */}
@@ -18,12 +18,15 @@ import Base from "../layouts/Base.astro";
       <h1 class="font-serif text-5xl md:text-7xl font-semibold text-gold tracking-wide mb-6 drop-shadow-lg">
         Na Hua Kukui
       </h1>
-      <p class="text-text-inverse/90 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10 drop-shadow-md">
-        Therapeutic and sacred bodywork for those standing at the edge of transformation. Rooted in Hawaiian lineage, offered one-on-one.
+      <p class="text-text-inverse/90 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-4 drop-shadow-md">
+        Cultivating seeds of knowledge for wholistic wellbeing.
+      </p>
+      <p class="text-text-inverse/70 text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-10 drop-shadow-md">
+        Our mission is to foster communal health and resilience through self awareness, movement and bodywork.
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="/contact" class="btn-primary">Book a session</a>
-        <a href="#kukui" class="btn-secondary !border-white/40 !text-white hover:!bg-white/10">Learn more</a>
+        <a href="/contact" class="btn-primary">Get in touch</a>
+        <a href="#about" class="btn-secondary !border-white/40 !text-white hover:!bg-white/10">Learn more</a>
       </div>
     </div>
 
@@ -35,17 +38,17 @@ import Base from "../layouts/Base.astro";
     </div>
   </section>
 
-  {/* ── Section 2: The Kukui ── */}
-  <section id="kukui" class="bg-bg-light py-24 md:py-32">
+  {/* ── Section 2: About ── */}
+  <section id="about" class="bg-bg-light py-24 md:py-32">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
         <div>
-          <h2 class="font-serif text-3xl md:text-4xl font-semibold text-accent mb-6">The Kukui</h2>
+          <h2 class="font-serif text-3xl md:text-4xl font-semibold text-accent mb-6">The Seeds of Light</h2>
           <p class="text-text/80 leading-relaxed mb-4">
-            The kukui tree has been a source of light in Hawaiian life for generations. Its seeds were pressed for oil, burned to illuminate the night, and passed hand to hand as a symbol of guidance, lineage, and knowledge.
+            Na Hua Kukui was founded to perpetuate the ancient principles and healing practice of Lomi Lomi in the line of Kahu Abraham Kawaii.
           </p>
           <p class="text-text/80 leading-relaxed">
-            Na Hua Kukui &mdash; the seeds of light &mdash; carries this forward. The work offered here is a continuation of that lineage: bodywork as illumination, touch as transmission, each session a small kernel of something older than any one of us.
+            The kukui tree has been a source of light in Hawaiian life for generations. Its seeds were pressed for oil, burned to illuminate the night, and passed hand to hand as a symbol of guidance, lineage, and knowledge. Na Hua Kukui carries this forward.
           </p>
         </div>
         <div class="aspect-square bg-accent/10 rounded-sm flex items-center justify-center">
@@ -57,32 +60,29 @@ import Base from "../layouts/Base.astro";
     </div>
   </section>
 
-  {/* ── Section 3: What's Offered ── */}
+  {/* ── Section 3: What We Offer ── */}
   <section class="bg-bg-light py-24 md:py-32 border-t border-accent/10">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="font-serif text-3xl md:text-4xl font-semibold text-accent text-center mb-16">
-        What's Offered
+        What We Offer
       </h2>
       <div class="grid md:grid-cols-3 gap-8">
-        {/* Card 1: Private Sessions */}
-        <a href="/offerings" class="group block bg-white/60 border border-accent/10 rounded-sm p-8 transition-all hover:-translate-y-1 hover:shadow-lg">
+        {/* Card 1: Sessions */}
+        <a href="/services" class="group block bg-white/60 border border-accent/10 rounded-sm p-8 transition-all hover:-translate-y-1 hover:shadow-lg">
           <div class="w-10 h-[2px] bg-gold mb-6"></div>
-          <h3 class="font-serif text-xl font-semibold text-text mb-3">Private Sessions</h3>
+          <h3 class="font-serif text-xl font-semibold text-text mb-3">Sessions</h3>
           <p class="text-text/70 text-sm leading-relaxed">
-            Therapeutic and sacred bodywork, offered in person. Each session is shaped around what the body and the moment are asking for.
+            Private bodywork sessions rooted in the Hawaiian healing tradition of Lomi Lomi, tailored to each individual.
           </p>
         </a>
 
-        {/* Card 2: Retreats with Jody */}
-        <a href="#" target="_blank" rel="noopener" class="group block bg-white/60 border border-accent/10 rounded-sm p-8 transition-all hover:-translate-y-1 hover:shadow-lg">
+        {/* Card 2: Trainings */}
+        <a href="/services#trainings" class="group block bg-white/60 border border-accent/10 rounded-sm p-8 transition-all hover:-translate-y-1 hover:shadow-lg">
           <div class="w-10 h-[2px] bg-gold mb-6"></div>
-          <h3 class="font-serif text-xl font-semibold text-text mb-3">Retreats with Jody</h3>
+          <h3 class="font-serif text-xl font-semibold text-text mb-3">Trainings</h3>
           <p class="text-text/70 text-sm leading-relaxed">
-            Deeper immersions led by Jody, teacher and carrier of this lineage. Held in places of stillness, opening space for longer transformation.
+            Learn the principles and practice of this lineage through structured training programs and workshops.
           </p>
-          <span class="inline-block mt-4 text-xs text-gold font-medium uppercase tracking-wide">
-            Visit Jody's site &rarr;
-          </span>
         </a>
 
         {/* Card 3: The Lineage */}
@@ -90,20 +90,21 @@ import Base from "../layouts/Base.astro";
           <div class="w-10 h-[2px] bg-gold mb-6"></div>
           <h3 class="font-serif text-xl font-semibold text-text mb-3">The Lineage</h3>
           <p class="text-text/70 text-sm leading-relaxed">
-            Every hand is trained by another. Learn about the teachers and tradition behind this work.
+            Every hand is trained by another. Learn about Kahu Abraham Kawaii and the tradition behind this work.
           </p>
         </a>
       </div>
     </div>
   </section>
 
-  {/* ── Section 4: Who This Is For ── */}
+  {/* ── Section 4: Mission ── */}
   <section class="bg-bg-dark py-24 md:py-32">
     <div class="max-w-2xl mx-auto px-6 text-center">
       <p class="font-serif text-xl md:text-2xl text-text-inverse/90 leading-relaxed italic mb-10">
-        These sessions are for people in good physical health who find themselves in transition &mdash; between chapters, careers, relationships, identities &mdash; and who want a holistic, embodied way through it. Not a fix. A forward movement.
+        &ldquo;It is not a matter of blood but a matter of spirit.&rdquo;
       </p>
-      <a href="/contact" class="btn-primary">Book a session</a>
+      <p class="text-text-inverse/60 text-sm mb-10">&mdash; Kahu Abraham Kawaii</p>
+      <a href="/contact" class="btn-primary">Get in touch</a>
     </div>
   </section>
 </Base>

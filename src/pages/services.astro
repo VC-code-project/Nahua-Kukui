@@ -1,0 +1,78 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base
+  title="Services"
+  description="Private Lomi Lomi bodywork sessions and training programs rooted in the lineage of Kahu Abraham Kawaii."
+  canonicalPath="/services"
+>
+  {/* Page Hero */}
+  <section class="bg-bg-dark pt-32 pb-20 md:pt-40 md:pb-24">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h1 class="font-serif text-4xl md:text-5xl font-semibold text-gold mb-6">Services</h1>
+      <p class="text-text-inverse/70 text-lg leading-relaxed">
+        Fostering communal health and resilience through self awareness, movement and bodywork.
+      </p>
+    </div>
+  </section>
+
+  {/* Sessions */}
+  <section class="bg-bg-light py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div class="aspect-[4/3] bg-accent/10 rounded-sm flex items-center justify-center">
+          <p class="text-muted text-sm italic text-center px-6">
+            Image: session
+          </p>
+        </div>
+        <div>
+          <div class="w-10 h-[2px] bg-gold mb-6"></div>
+          <h2 class="font-serif text-2xl md:text-3xl font-semibold text-accent mb-4">
+            Sessions
+          </h2>
+          <p class="text-text/80 leading-relaxed mb-4">
+            [Session description &mdash; details about the Lomi Lomi bodywork sessions offered, what to expect, duration, and how the work is tailored to each individual. Provided by client.]
+          </p>
+          <a href="/contact" class="btn-primary mt-4">Book a session</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Trainings */}
+  <section id="trainings" class="bg-bg-light py-24 md:py-32 border-t border-accent/10">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div class="order-2 md:order-1">
+          <div class="w-10 h-[2px] bg-gold mb-6"></div>
+          <h2 class="font-serif text-2xl md:text-3xl font-semibold text-accent mb-4">
+            Trainings
+          </h2>
+          <p class="text-text/80 leading-relaxed mb-4">
+            [Training description &mdash; details about the training programs, workshops, and educational offerings rooted in the teachings of Kahu Abraham Kawaii. Provided by client.]
+          </p>
+          <a href="/contact" class="btn-primary mt-4">Inquire about trainings</a>
+        </div>
+        <div class="order-1 md:order-2 aspect-[4/3] bg-accent/10 rounded-sm flex items-center justify-center">
+          <p class="text-muted text-sm italic text-center px-6">
+            Image: training
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Contact CTA */}
+  <section class="bg-bg-light py-24 md:py-32 border-t border-accent/10">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <h2 class="font-serif text-2xl md:text-3xl font-semibold text-accent mb-6">
+        Ready to Begin?
+      </h2>
+      <p class="text-text/80 leading-relaxed mb-10">
+        Reach out to learn more about sessions, trainings, or to ask any questions.
+      </p>
+      <a href="/contact" class="btn-primary">Get in touch</a>
+    </div>
+  </section>
+</Base>

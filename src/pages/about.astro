@@ -3,95 +3,101 @@ import Base from "../layouts/Base.astro";
 ---
 
 <Base
-  title="The Lineage"
-  description="Na Hua Kukui is a lineage — a chain of teachers, hands, and traditions carried forward through therapeutic and sacred bodywork."
+  title="About"
+  description="Na Hua Kukui was founded to perpetuate the ancient principles and healing practice of Lomi Lomi in the line of Kahu Abraham Kawaii."
   canonicalPath="/about"
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Na Hua Kukui Practitioner",
+      "@type": "Organization",
+      "name": "Na Hua Kukui",
       "url": "https://nahuakukui.com/about",
-      "description": "Practitioner of therapeutic and sacred bodywork in the Hawaiian kukui lineage."
+      "description": "Perpetuating the ancient principles and healing practice of Lomi Lomi in the line of Kahu Abraham Kawaii."
     })} />
   </Fragment>
 
   {/* Page Hero */}
   <section class="bg-bg-dark pt-32 pb-20 md:pt-40 md:pb-24">
     <div class="max-w-3xl mx-auto px-6 text-center">
-      <h1 class="font-serif text-4xl md:text-5xl font-semibold text-gold mb-6">The Lineage</h1>
+      <h1 class="font-serif text-4xl md:text-5xl font-semibold text-gold mb-6">About</h1>
       <p class="text-text-inverse/70 text-lg leading-relaxed">
-        Na Hua Kukui is not one person. It is a lineage &mdash; a chain of teachers, hands, and traditions carried forward through the work offered here.
+        Na Hua Kukui was founded to perpetuate the ancient principles and healing practice of Lomi Lomi (Massage) in the line of Kahu Abraham Kawaii.
       </p>
     </div>
   </section>
 
-  {/* Bio Section A: Jody's Teacher */}
+  {/* Bio Section A: Kahu Abraham Kawaii */}
   <section class="bg-bg-light py-24 md:py-32">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
         <div class="aspect-square bg-accent/10 rounded-sm flex items-center justify-center">
           <p class="text-muted text-sm italic text-center px-6">
-            Portrait: Jody's teacher
+            Portrait: Kahu Abraham Kawaii
           </p>
         </div>
         <div>
           <h2 class="font-serif text-2xl md:text-3xl font-semibold text-accent mb-4">
-            [Teacher's Name]
+            Kahu Abraham Kawaii
           </h2>
           <p class="text-sm text-muted uppercase tracking-wide mb-6">The Source</p>
+          <p class="text-text/80 leading-relaxed mb-4">
+            Kahu Abraham was a native Hawaiian from Honaunau, Hawaii, who was skilled in numerous traditional healing practices. After years of training with Kupuna, Kahuna and Olohe within his immediate and extended family he decided to share his knowledge of Kahuna Principles with the wider world.
+          </p>
+          <p class="text-text/80 leading-relaxed mb-4">
+            He believed the wealth of knowledge inherent in Hawaiian Culture could be valuable to all. In Kahu's words: <em class="text-accent">&ldquo;It is not a matter of blood but a matter of spirit.&rdquo;</em>
+          </p>
+          <p class="text-text/80 leading-relaxed mb-4">
+            Kahu founded Na Pua Olohe (The Flowers of Wisdom) in 1989, as a way to bring his teachings to the public. In the years following, Kahu held workshops and lectures, offered consultations and private sessions from his home on Kauai and around the world.
+          </p>
           <p class="text-text/80 leading-relaxed">
-            [Bio of Jody's teacher — 100&ndash;150 words. This section tells the story of where the lineage begins, the traditions carried forward, and the knowledge passed down through hands and practice. Provided by client.]
+            By applying natural principles his teachings develop character, dignity and deep perceptive abilities.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  {/* Bio Section B: Jody */}
+  {/* Bio Section B: Jody Mountain */}
   <section class="bg-bg-light py-24 md:py-32 border-t border-accent/10">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
         <div class="order-2 md:order-1">
           <h2 class="font-serif text-2xl md:text-3xl font-semibold text-accent mb-4">
-            Jody
+            Jody Mountain
           </h2>
-          <p class="text-sm text-muted uppercase tracking-wide mb-6">The Teacher</p>
-          <p class="text-text/80 leading-relaxed mb-6">
-            [Bio of Jody — 100&ndash;150 words. Jody is the carrier of this lineage and leads deeper immersions and retreats. Her work bridges the sacred and the structural, held in places of stillness. Provided by client.]
+          <p class="text-sm text-muted uppercase tracking-wide mb-6">Teacher</p>
+          <p class="text-text/80 leading-relaxed">
+            [Bio of Jody Mountain &mdash; 100&ndash;150 words. Provided by client.]
           </p>
-          <a href="#" target="_blank" rel="noopener" class="text-gold text-sm font-medium hover:underline">
-            Learn about Jody's retreats &rarr;
-          </a>
         </div>
         <div class="order-1 md:order-2 aspect-square bg-accent/10 rounded-sm flex items-center justify-center">
           <p class="text-muted text-sm italic text-center px-6">
-            Portrait: Jody
+            Portrait: Jody Mountain
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  {/* Bio Section C: The Practitioner */}
+  {/* Bio Section C: Zen Kekoa Powers */}
   <section class="bg-bg-light py-24 md:py-32 border-t border-accent/10">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
         <div class="aspect-square bg-accent/10 rounded-sm flex items-center justify-center">
           <p class="text-muted text-sm italic text-center px-6">
-            Portrait: Practitioner
+            Portrait: Zen Kekoa Powers
           </p>
         </div>
         <div>
           <h2 class="font-serif text-2xl md:text-3xl font-semibold text-accent mb-4">
-            [Practitioner's Name]
+            Zen Kekoa Powers
           </h2>
-          <p class="text-sm text-muted uppercase tracking-wide mb-6">The Practitioner</p>
+          <p class="text-sm text-muted uppercase tracking-wide mb-6">Practitioner</p>
           <p class="text-text/80 leading-relaxed mb-8">
-            [Bio of the practitioner — 100&ndash;150 words. This is the person offering sessions through Na Hua Kukui, trained in this lineage and carrying the work forward. Provided by client.]
+            [Bio of Zen Kekoa Powers &mdash; 100&ndash;150 words. Provided by client.]
           </p>
-          <a href="/contact" class="btn-primary">Book a session</a>
+          <a href="/contact" class="btn-primary">Get in touch</a>
         </div>
       </div>
     </div>
