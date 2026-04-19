@@ -31,10 +31,13 @@ import Base from "../layouts/Base.astro";
   <section class="bg-bg-light py-24 md:py-32">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-        <div class="aspect-square bg-accent/10 rounded-sm flex items-center justify-center">
-          <p class="text-muted text-sm italic text-center px-6">
-            Portrait: Kahu Abraham Kawaii
-          </p>
+        <div class="aspect-[3/4] bg-accent/10 rounded-sm overflow-hidden flex items-center justify-center">
+          <img
+            src="/images/kahu-abraham.jpg"
+            alt="Kahu Abraham Kawaii"
+            class="w-full h-full object-cover"
+            loading="eager"
+          />
         </div>
         <div>
           <h2 class="font-serif text-2xl md:text-3xl font-semibold text-accent mb-4">
@@ -71,10 +74,13 @@ import Base from "../layouts/Base.astro";
             [Bio of Jody Mountain &mdash; 100&ndash;150 words. Provided by client.]
           </p>
         </div>
-        <div class="order-1 md:order-2 aspect-square bg-accent/10 rounded-sm flex items-center justify-center">
-          <p class="text-muted text-sm italic text-center px-6">
-            Portrait: Jody Mountain
-          </p>
+        <div class="order-1 md:order-2 aspect-video bg-accent/10 rounded-sm overflow-hidden flex items-center justify-center">
+          <img
+            src="/images/jody-mountain.jpg"
+            alt="Jody Mountain"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
         </div>
       </div>
     </div>
